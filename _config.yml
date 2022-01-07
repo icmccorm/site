@@ -6,7 +6,7 @@ domain: "icmccorm.me"
 url: "https://icmccorm.me" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 social_tag: icmccorm
-phone: "+1-651-239-0832"
+phone: "(412) 219-2160"
 email: icmccorm@andrew.cmu.edu
 orcid_id: "0000-0001-6349-3402"
 # Build settings
