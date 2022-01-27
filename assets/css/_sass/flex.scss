@@ -34,7 +34,7 @@
 }
 
 .flex-content{
-    overflow: scroll;
+    overflow-y: scroll;
     order: 1;
     flex-grow: 1;
     @include desktop {
