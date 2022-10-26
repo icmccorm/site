@@ -35,6 +35,6 @@ I am currently collaborating with [Jenna Wise](https://www.cs.cmu.edu/~jlwise/),
 
 # Education
 
-I attended the [University of Wisconsin-Eau Claire](https://www.uwec.edu/) from 2017 to 2021, and I completed a double major in Computer Science and English with a cumulative GPA of 3.99.  
+I attended the [University of Wisconsin-Eau Claire](https://www.uwec.edu/) from 2017 to 2021, and I completed a double major in Computer Science and English.
 
 [Dr. Chris Johnson](https://www.jmu.edu/cise/cs/people/faculty-staff/johnson-chris.shtml) was my undergraduate research mentor. We built [Twoville](https://twodee.org/blog/18119) and Scute: implementations of a direct manipulation programming language for animating vector graphics.
