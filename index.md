@@ -5,7 +5,7 @@ post: ./_includes/publication.html
 # Research
 I'm a PhD student in Software Engineering at Carnegie Mellon University's Software and Societal Systems Department ([S3D](https://s3d.cmu.edu/)). I am advised by [Dr. Jonathan Aldrich](https://www.cs.cmu.edu/~aldrich/) and [Dr. Joshua Sunshine](https://www.cs.cmu.edu/~jssunshi/). 
 
-I focus on the intersection of human-computer interaction and formal methods. Currently, I'm studying the unsafe features of the Rust programming language, which allow unrestricted memory access and foreign function calls. These capabilities are necessary for systems programming, but may break the invariants of Rust's borrow checker, reintroducing the memory safety issues that it was designed to prevent. I'm examining developers' challenges when writing unsafe Rust and designing new tools to address them. 
+I focus on the intersection of human-computer interaction and formal methods. Currently, I'm studying the [unsafe](https://doc.rust-lang.org/book/ch19-01-unsafe-rust.html)features of the Rust programming language, which are necessary for systems programming but difficult to use correctly. I'm examining developers' challenges when writing unsafe Rust and designing new tools to address them. 
 
 Prior to my focus Rust, I collaborated with [Jenna Wise](https://www.cs.cmu.edu/~jlwise/) on the design and implementation of Gradual C0, a gradual verification tool for the [C0](http://reports-archive.adm.cs.cmu.edu/anon/2010/CMU-CS-10-145.pdf) programming language. In 2022, we evaluated this approach against multiple, fully-dynamic baselines and observed a significant reduction in runtime overhead.
 
