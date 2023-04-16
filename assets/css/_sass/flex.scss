@@ -21,11 +21,11 @@
 
 }
 .flex-profile {
-    @include box-shadow(4px 0px 15px 0px rgba(143, 143, 143, 0.7));
     @include desktop {
         flex-basis: 330px;
         max-width: 30%;
         position: sticky;
+        border-right: 1px solid black;
     }
     @include mobile {
         position: relative;
@@ -203,13 +203,28 @@
     font-size: 1em;
 }
 
-.footer {
+.nav {
+    font-size: 0;
     margin-top: auto;
-    padding: 1em;
+    position: sticky;
+    top: 0;
+    width: 100%;
     background-color: $color-black-lite;
     color: $color-white;
     @include mobile {
         font-size: 4dpt;
+    }
+    border-bottom: 1px solid black;
+}
+
+.footer {
+    margin-top: auto;
+    padding: 1em;
+    width: 100%;
+    background-color: $color-black-lite;
+    color: $color-white;
+    @include mobile {
+        font-size: 0.5dpt;
     }
 }
 .footer-attrib {

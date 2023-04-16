@@ -76,7 +76,7 @@
       <div class="flex-content">
         <div class="nav">
           
-            <a href="/"  class="nav-item nav-item-current" >
+            <a href="/"  class="nav-item" >
               About Me
             </a>
           
@@ -84,26 +84,230 @@
               Blog
             </a>
           
-            <a href="/pubs.html"  class="nav-item" >
+            <a href="/pubs.html"  class="nav-item nav-item-current" >
               Publications
             </a>
           
         </div>
         <div class="flex-body">
           <div class="flex-rendered">
-            <h1 id="research">Research</h1>
-<p>I’m a PhD student in Software Engineering at Carnegie Mellon University’s Software and Societal Systems Department (<a href="https://s3d.cmu.edu/">S3D</a>). I am advised by <a href="https://www.cs.cmu.edu/~aldrich/">Dr. Jonathan Aldrich</a> and <a href="https://www.cs.cmu.edu/~jssunshi/">Dr. Joshua Sunshine</a>.</p>
+            <h2 id="preprints">Preprints</h2>
 
-<p>Broadly, I focus on the intersection of human-computer interaction and formal methods. Currently, I’m studying the unsafe features of the Rust programming language, which allow unrestricted access to memory and support for calling foreign functions. This is necessary for effective systems programming, but can break the invariants of Rust’s borrow checker, reintroducing the memory safety issues that Rust was designed to prevent. By learning from developers’ experiences, we can design and improve tools that assist with writing unsafe Rust, improving its usability and ensuring memory safety.</p>
+<div class="pub">
+<div class="pub-tags">
+    <span class="conf-tag">Preprint</span>
+</div> 
+<div class="pub-content">
+<div class="pub-text">
+    <h3 class="pub-title">Gradual C0: Symbolic Execution for Efficient Gradual Verification</h3>
+    <span class="pub-authors">Jenna DiVincenzo, Ian McCormack, Hemant Gouni, Jacob Gorenburg, Mona Zhang, Conrad Zimmerman, Joshua Sunshine, Éric Tanter, Jonathan Aldrich</span>
+    <p class="pub-conference">  Full paper. <em> In Arxiv</em>, 2022.</p>
+</div>
+<div class="pub-links">
 
-<p>Prior to my focus on unsafe Rust, I collaborated with <a href="https://www.cs.cmu.edu/~jlwise/">Jenna Wise</a> on the design and implementation of Gradual C0, a gradual verification tool for the <a href="http://reports-archive.adm.cs.cmu.edu/anon/2010/CMU-CS-10-145.pdf">C0</a> programming language. In 2022, we evaluated this approach against multiple, fully-dynamic baselines and observed a significant reduction in runtime overhead.</p>
 
-<h1 id="education">Education</h1>
-<p>I attended the <a href="https://www.uwec.edu/">University of Wisconsin-Eau Claire</a> from 2017 to 2021, where I completed a double major in Computer Science and English, with an emphasis on rhetoric of science, technology, and culture. I was introduced to Computer Science research by <a href="https://www.jmu.edu/cise/cs/people/faculty-staff/johnson-chris.shtml">Chris Johnson</a>. At the time, Chris was developing <a href="https://twoville.org/#index">TwoVille</a>, a direct manipulation programming language for creating SVG animations. This project emphasized the importance of user-oriented design and introduced me to the fundamentals of programming language implementation.</p>
 
-<p>In 2020, I was accepted into CMU’s <a href="https://www.cmu.edu/scs/s3d/reuse/Research/index.html">REUSE</a> program, where I joined a collaboration between CMU and Arizona State University. We created <a href="http://ccsg.ece.cmu.edu/ttpython/index.html">TTPython</a>, a macroprogramming systems for the Internet of Things. We used our prototype to reimplement a mock autonomous vehicle intersection and observed significantly reduced latency between devices, exemplifying how emphasizing the usability in programming language design can increase the objective performance of software applications. Our prototype implementation took 2nd place in a design competition at the 2021 CPS-IoT Week.</p>
 
-<p>My current research on unsafe Rust is funded by the National Science Foundation’s Graduate Research Fellowship Program (GRFP). It continues in the sprit of each of my past projects, translating developers challenges into solutions that improve usability <em>and</em> demonstrably improve performance or quality metrics.</p>
+
+
+
+
+
+
+
+
+<a href="/assets/pdfs/arxiv_gv.pdf" class="pub-link-box">
+<i class="pub-link ri-article-line"></i>
+<p>PDF</p>
+</a>
+
+
+
+
+
+
+
+</div>
+</div>
+</div>
+
+<h2 id="research-competitions">Research Competitions</h2>
+
+<div class="pub">
+<div class="pub-tags">
+    <span class="conf-tag">CPS-IoT Week</span>
+</div> 
+<div class="pub-content">
+<div class="pub-text">
+    <h3 class="pub-title">One Program to Rule the Intersection</h3>
+    <span class="pub-authors">Reese Grimsley, Edward Andert, Ian C. McCormack, Eve Hu, Bob Iannucci</span>
+    <p class="pub-conference">  <em> In Student Design Competition: Networked Computing at the Edge</em>, 2020.</p>
+</div>
+<div class="pub-links">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="/assets/slides/cps_ttpython20_slides.pdf" class="pub-link-box">
+<i class="pub-link ri-slideshow-line"></i>
+<p>Slides</p>
+</a>
+
+
+
+<a href="/assets/posters/cps_ttpython20_poster.pdf" class="pub-link-box">
+<i class="ri-table-line"></i>
+<p>Poster</p>
+</a>
+
+
+
+<a href="https://www.youtube.com/watch?v=f5HHljXT6DY" class="pub-link-box">
+<i class="pub-link ri-video-line"></i>
+<p>Video</p>
+</a>
+
+</div>
+</div>
+</div>
+
+<div class="pub">
+<div class="pub-tags">
+    <span class="conf-tag">SPLASH</span>
+</div> 
+<div class="pub-content">
+<div class="pub-text">
+    <h3 class="pub-title">A Software Library Model for the Internet of Things</h3>
+    <span class="pub-authors">Ian C. McCormack</span>
+    <p class="pub-conference">  Extended abstract. <em> In Proc. of the SIGPLAN International Conference on Systems, Programming, Languages, and Applications: Software for Humanity (SPLASH)</em>, 2020, 28—30.</p>
+</div>
+<div class="pub-links">
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="/assets/pdfs/splash_iot20.pdf" class="pub-link-box">
+<i class="pub-link ri-article-line"></i>
+<p>PDF</p>
+</a>
+
+
+
+
+
+<a href="/assets/posters/splash_iot20_poster.pdf" class="pub-link-box">
+<i class="ri-table-line"></i>
+<p>Poster</p>
+</a>
+
+
+
+</div>
+</div>
+</div>
+
+<h2 id="artifacts--demonstrations">Artifacts &amp; Demonstrations</h2>
+
+<div class="pub">
+<div class="pub-tags">
+    <span class="conf-tag">FabLearn</span>
+</div> 
+<div class="pub-content">
+<div class="pub-text">
+    <h3 class="pub-title">Direct Manipulation and SVG: Creating and Adjusting Graphics Programmatically and Visually</h3>
+    <span class="pub-authors">Ian C. McCormack, Chris Johnson</span>
+    <p class="pub-conference">  Demonstration. <em> In FabLearn: Making as Resistance and Resilience</em>, 2020.</p>
+</div>
+<div class="pub-links">
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="/assets/pdfs/fablearn_svg20.pdf" class="pub-link-box">
+<i class="pub-link ri-article-line"></i>
+<p>PDF</p>
+</a>
+
+
+
+
+
+<a href="/assets/posters/fablearn_svg20_poster.pdf" class="pub-link-box">
+<i class="ri-table-line"></i>
+<p>Poster</p>
+</a>
+
+
+
+</div>
+</div>
+</div>
+
+<h2 id="talks">Talks</h2>
+
+<div class="pub">
+<div class="pub-tags">
+    <span class="conf-tag">SPLASH-E</span>
+</div> 
+<div class="pub-content">
+<div class="pub-text">
+    <h3 class="pub-title">Direct Manipulation for Computational Making</h3>
+    <span class="pub-authors">Ian C. McCormack, Chris Johnson</span>
+    <p class="pub-conference">  Lightning Talk. <em> In SPLASH-E</em>, 2020.</p>
+</div>
+<div class="pub-links">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="/assets/slides/splash_dm20_slides.pdf" class="pub-link-box">
+<i class="pub-link ri-slideshow-line"></i>
+<p>Slides</p>
+</a>
+
+
+
+
+
+</div>
+</div>
+</div>
 
           </div>
           <div class="footer">

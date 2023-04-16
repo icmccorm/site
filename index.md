@@ -3,45 +3,15 @@ layout: default
 post: ./_includes/publication.html
 ---
 # Research
+I'm a PhD student in Software Engineering at Carnegie Mellon University's Software and Societal Systems Department ([S3D](https://s3d.cmu.edu/)). I am advised by [Dr. Jonathan Aldrich](https://www.cs.cmu.edu/~aldrich/) and [Dr. Joshua Sunshine](https://www.cs.cmu.edu/~jssunshi/). 
 
-I'm a PhD student in Software Engineering at Carnegie Mellon University's [Institute for Software Research](https://www.isri.cmu.edu/). I am advised by [Dr. Jonathan Aldrich](https://www.cs.cmu.edu/~aldrich/) and [Dr. Joshua Sunshine](https://www.cs.cmu.edu/~jssunshi/). 
+Broadly, I focus on the intersection of human-computer interaction and formal methods. Currently, I'm studying the unsafe features of the Rust programming language, which allow unrestricted access to memory and support for calling foreign functions. This is necessary for effective systems programming, but can break the invariants of Rust's borrow checker, reintroducing the memory safety issues that Rust was designed to prevent. By learning from developers' experiences, we can design and improve tools that assist with writing unsafe Rust, improving its usability and ensuring memory safety.
 
-Tools that formally verify program correctness tend to require significant up-front investment in annotating source code. I am researching gradual approaches to verification and program analysis to make these practices easier to adopt without compromising on soundness or effectiveness. 
-
-I am currently collaborating with [Jenna Wise](https://www.cs.cmu.edu/~jlwise/), [Conrad Zimmerman](https://conradz.com/), and Hermant Gouni on the design and implementation of a gradual verifier for the [C0 programming language](http://reports-archive.adm.cs.cmu.edu/anon/2010/CMU-CS-10-145.pdf). We will empirically evaluate the effectiveness of this new gradual verification technique over C0's existing static verifier.
-
-# Publications
-
-## Preprints
-{% assign preprint_pubs = site.publications | where: "category", "preprint" %}
-
-
-
-{% for pre_pub in preprint_pubs%}
-{% include publication.html pub=pre_pub %}
-{% endfor %}
-
-## Research Competitions
-{% assign conference_pubs = site.publications | where: "category", "competition" %}
-{% for conf_pub in conference_pubs%}
-{% include publication.html pub=conf_pub %}
-{% endfor %}
-
-## Artifacts & Demonstrations
-{% assign artifact_pubs = site.publications | where: "category", "artifact" %}
-{% for art_pub in artifact_pubs%}
-{% include publication.html pub=art_pub %}
-{% endfor %}
-
-## Talks
-{% assign talk_pubs = site.publications | where: "category", "talk" %}
-
-{% for talk_pub in talk_pubs %}
-{% include publication.html pub=talk_pub %}
-{% endfor %}
+Prior to my focus on unsafe Rust, I collaborated with [Jenna Wise](https://www.cs.cmu.edu/~jlwise/) on the design and implementation of Gradual C0, a gradual verification tool for the [C0](http://reports-archive.adm.cs.cmu.edu/anon/2010/CMU-CS-10-145.pdf) programming language. In 2022, we evaluated this approach against multiple, fully-dynamic baselines and observed a significant reduction in runtime overhead.
 
 # Education
+I attended the [University of Wisconsin-Eau Claire](https://www.uwec.edu/) from 2017 to 2021, where I completed a double major in Computer Science and English, with an emphasis on rhetoric of science, technology, and culture. I was introduced to Computer Science research by [Chris Johnson](https://www.jmu.edu/cise/cs/people/faculty-staff/johnson-chris.shtml). At the time, Chris was developing [TwoVille](https://twoville.org/#index), a direct manipulation programming language for creating SVG animations. This project emphasized the importance of user-oriented design and introduced me to the fundamentals of programming language implementation.
 
-I attended the [University of Wisconsin-Eau Claire](https://www.uwec.edu/) from 2017 to 2021, and I completed a double major in Computer Science and English.
+In 2020, I was accepted into CMU's [REUSE](https://www.cmu.edu/scs/s3d/reuse/Research/index.html) program, where I joined a collaboration between CMU and Arizona State University. We created [TTPython](http://ccsg.ece.cmu.edu/ttpython/index.html), a macroprogramming systems for the Internet of Things. We used our prototype to reimplement a mock autonomous vehicle intersection and observed significantly reduced latency between devices, exemplifying how emphasizing the usability in programming language design can increase the objective performance of software applications. Our prototype implementation took 2nd place in a design competition at the 2021 CPS-IoT Week.
 
-[Dr. Chris Johnson](https://www.jmu.edu/cise/cs/people/faculty-staff/johnson-chris.shtml) was my undergraduate research mentor. We built [Twoville](https://twodee.org/blog/18119) and Scute: implementations of a direct manipulation programming language for animating vector graphics.
+My current research on unsafe Rust is funded by the National Science Foundation's Graduate Research Fellowship Program (GRFP). It continues in the sprit of each of my past projects, translating developers challenges into solutions that improve usability *and* demonstrably improve performance or quality metrics.

@@ -1,95 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image/x-icon" href="{{ base.url | prepend: site.url }}/assets/img/favicon.ico" >
-    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet"> 
-    <script src="{{ base.url | prepend: site.url }}/assets/js/dropdown.js"></script>
-    <title>Ian C. McCormack</title>
-  </head>
-  <body>
-    <div id="root">
-      <div class="flex-main">
-        <div class="flex-profile">
-          <div class="profile">
-            <div class="profile-header">
-              <div class="profile-pic">
-                <img src="{{ base.url | prepend: site.url }}/assets/img/headshot.png"></img>
-              </div>
-              <div class="profile-title">
-                <h1>{{site.title}}</h1>
-                <span>{{site.org}}</span>
-              </div>
-              <button class="form-button" id="profile-contact-toggle">
-                Contact
-              </button>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/x-icon" href="{{ base.url | prepend: site.url }}/assets/img/favicon.ico">
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <script src="{{ base.url | prepend: site.url }}/assets/js/dropdown.js"></script>
+  <title>Ian C. McCormack</title>
+</head>
+
+<body>
+  <div id="root">
+    <div class="flex-main">
+      <div class="flex-profile">
+        <div class="profile">
+          <div class="profile-header">
+            <div class="profile-pic">
+              <img src="{{ base.url | prepend: site.url }}/assets/img/headshot.png"></img>
             </div>
-              <div class="profile-contact-wrapper">
-                <div id="profile-contact" class="profile-contact">
-                  <hr class="section-sep" />
-                  <ul class="profile-contact-list">
-                    <li class="item">
-                      <i class="ri-building-line"></i
-                      ><span>{{site.suborg}}</span>
-                    </li>
-                    <li class="item">
-                      <i class="ri-mail-line"></i
-                      ><span>{{site.email}}</span>
-                    </li>
-                    <li class="item">
-                      <i class="ri-phone-line"></i
-                      ><span>{{site.phone}}</span>
-                    </li>
-                  </ul>
-                  <hr />
-                  <div class="social">
-                    <span class="social-tag">@{{site.social_tag}}</span>
-                    <div class="social-icons">
-                      <a href="https://twitter.com/{{site.social_tag}}/">
-                        <i class="ri-twitter-fill"></i></a>
-                      <a href="https://github.com/{{site.social_tag}}/">
-                        <i class="ri-github-fill"></i>
-                      </a>
-                      <a href="https://www.linkedin.com/in/{{site.social_tag}}">
-                        <i class="ri-linkedin-box-fill"></i> 
-                      </a>
-                    </div>
-                    <div class="social-icons">
-                      <a href="https://scholar.google.com/citations?user=KPLZe-sAAAAJ&hl=en&oi=sra">
-                        <i class="ai ai-google-scholar"></i>
-                      </a>
-                      <a href="https://orcid.org/{{site.orcid_id}}">
-                        <i class="ai ai-orcid"></i>
-                      </a>
-                    </div>
-                    <div class="social-icons">
-                      <a href="{{ base.url | prepend: site.url }}/assets/pdfs/cv.pdf">
-                        <i class="ai ai-cv"></i>
-                      </a>
-                    </div>
-                  </div>
-                  
-                </div>
+            <div class="profile-title">
+              <h1>{{site.title}}</h1>
+              <span>{{site.org}}</span>
             </div>
+            <button class="form-button" id="profile-contact-toggle">
+              Contact
+            </button>
           </div>
-        </div>
-        <div class="flex-content">
-          <div class="flex-body">
-            <div class="flex-rendered">
-              {{content}}
-            </div>
-            <div class="footer">
-              <span>&copy; <script>document.write(new Date().getFullYear())</script>, Ian C. McCormack.</span>
-              <span class="footer-attrib">Powered by <a class="footer-link" href="https://jekyllrb.com">Jekyll</a>, <a href="https://jpswalsh.github.io/academicons/" class="footer-link">Academicons</a>, &amp; <a href="https://remixicon.com/" class="footer-link">Remix Icon</a></span>
+          <div class="profile-contact-wrapper">
+            <div id="profile-contact" class="profile-contact">
+              <hr class="section-sep" />
+              <ul class="profile-contact-list">
+                <li class="item">
+                  <i class="ri-building-line"></i><span>{{site.suborg}}</span>
+                </li>
+                <li class="item">
+                  <i class="ri-mail-line"></i><span>{{site.email}}</span>
+                </li>
+              </ul>
+              <hr />
+              <div class="social">
+                <span class="social-tag">@{{site.social_tag}}</span>
+                <div class="social-icons">
+                  <a href="https://twitter.com/{{site.social_tag}}/">
+                    <i class="ri-twitter-fill"></i></a>
+                  <a href="https://github.com/{{site.social_tag}}/">
+                    <i class="ri-github-fill"></i>
+                  </a>
+                  <a href="https://www.linkedin.com/in/{{site.social_tag}}">
+                    <i class="ri-linkedin-box-fill"></i>
+                  </a>
+                </div>
+                <div class="social-icons">
+                  <a href="https://scholar.google.com/citations?user=KPLZe-sAAAAJ&hl=en&oi=sra">
+                    <i class="ai ai-google-scholar"></i>
+                  </a>
+                  <a href="https://orcid.org/{{site.orcid_id}}">
+                    <i class="ai ai-orcid"></i>
+                  </a>
+                </div>
+                <div class="social-icons">
+                  <a href="{{ base.url | prepend: site.url }}/assets/pdfs/cv.pdf">
+                    <i class="ai ai-cv"></i>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
+      <div class="flex-content">
+        <div class="nav">
+          {% for item in site.data.navigation %}
+            <a href="{{item.link}}" {% if page.url == item.link %} class="nav-item nav-item-current" {% else %} class="nav-item" {% endif %}>
+              {{ item.name }}
+            </a>
+          {% endfor %}
+        </div>
+        <div class="flex-body">
+          <div class="flex-rendered">
+            {{content}}
+          </div>
+          <div class="footer">
+            <span>&copy;
+              <script>document.write(new Date().getFullYear())</script>, Ian C. McCormack.
+            </span>
+            <span class="footer-attrib">Powered by <a class="footer-link" href="https://jekyllrb.com">Jekyll</a>, <a
+                href="https://jpswalsh.github.io/academicons/" class="footer-link">Academicons</a>, &amp; <a
+                href="https://remixicon.com/" class="footer-link">Remix Icon</a></span>
+          </div>
+        </div>
+      </div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>

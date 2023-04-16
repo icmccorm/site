@@ -1,35 +1,28 @@
 .pub {
     display: flex;
+    flex-flow: column;
     @include desktop {
-        margin-left: 2em;
-        flex-flow: ltr;
-    }
-    @include mobile {
-        flex-flow: column;
-    }
 
+    }
+    border: 1px solid black;
     border-radius: 5px;
     margin-bottom: 0.5em;
     @include clearfix;
+    padding: 0.75em;
 }
 
 .pub-tags {
+    margin-bottom: 0.75em;
+    float: right;
     @include desktop {
         flex: 0 0 20%;
         max-width: 20%;
     }
-    @include mobile{
-        margin-bottom: 0.75em;
-    }
-
 
 }
 
 .pub-content {
-    flex: 0 0 66%;
-    @include desktop {
-        max-width: 66%;
-    }
+
 }
 .pub-links{
 

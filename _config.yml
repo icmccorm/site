@@ -1,12 +1,11 @@
 title: Ian C. McCormack
 org: "PhD Student @ Carnegie Mellon"
-suborg: "Institute for Software Research"
+suborg: "Software and Societal Systems (S3D)"
 description: >- # this means to ignore newlines until "baseurl:"
 domain: "icmccorm.me"
 url: "https://icmccorm.me" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 social_tag: icmccorm
-phone: "(412) 219-2160"
 email: icmccorm@andrew.cmu.edu
 orcid_id: "0000-0001-6349-3402"
 # Build settings
@@ -20,6 +19,7 @@ favicon:
 
 collections:
   - publications
+  - posts
   
 # Exclude from processing.
 # The following items will not be processed, by default.

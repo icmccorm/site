@@ -2,6 +2,7 @@ $mobile-width: 768px;
 $desktop-width: 1024px;
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
 
 @mixin mobile {
     @media (max-width: #{$desktop-width - 1px}) {
@@ -88,6 +89,32 @@ input[type=button], input[type=submit], button{
     }
 }
 
+.nav-item {
+    display: inline-block;
+    padding: 1em;
+    text-decoration: none;
+    margin: 0 !important;
+    border: none;
+    font-size: 12pt;
+    color: $color-black;
+    @include box-shadow(0px, 4px, 6px, rgba(0, 0, 0, 0.2));
+    @include transition(background-color 0.15s linear);
+    font-weight: 400;
+    &:hover{
+        background-color: $color-accent;
+        color: $color-black-lite;
+    }
+    //make the text color white when not hovering
+    &:not(:hover){
+        color: $color-white;
+    }
+}
+
+.nav-item-current {
+    background-color: $color-gray;
+    color: $color-black-lite !important;
+}
+
 textarea {
     display: block;
     resize: none;
@@ -143,4 +170,8 @@ p {
 
 hr {
     border: 1px solid black;
+}
+
+h2 {
+    margin-left: 0 !important;
 }
