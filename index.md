@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 post: ./_includes/publication.html
 ---
 # Research

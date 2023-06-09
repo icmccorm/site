@@ -2,20 +2,20 @@
 
 .flex-main {
     display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    height: auto;
     @include desktop {
-        flex-flow: row nowrap;
         justify-content: flex-start;
         align-items: stretch;
     }
     @include mobile {
-        flex-flow: column nowrap;
         align-items: center;
         height: auto;
 
     }
     width: 100%;
     max-height: 100%;
-    min-height: 710px;
     overflow: hidden;
     
 
@@ -51,9 +51,15 @@
 
 .flex-body {
     display: flex;
+    align-items: center;
+    justify-items: center;
     flex-direction: column;
     min-height: 100vh;
     flex-grow: 1;
+}
+
+.flex-body-post{
+    align-items: center;
 }
 
 .flex-rendered{
@@ -61,13 +67,27 @@
     flex-grow: 1;
     @include desktop {
         max-width: 800px;
-        padding-left: 5em;
     }
     @include mobile {
         padding-left: 1em;
         padding-right: 1em;
     }
     padding-bottom: 2em;
+}
+
+.flex-rendered-post {
+    @include desktop {
+        max-width: 600px !important;
+        padding-left: 0em !important;
+    }
+}
+
+.flex-rendered-post {
+    box-sizing: border-box;
+    @include desktop {
+        max-width: 800px;
+    }
+
 }
 
 .flex-body ul {
@@ -204,18 +224,26 @@
 }
 
 .nav {
+    display: flex;
+    align-content: stretch;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
     font-size: 0;
     margin-top: auto;
     position: sticky;
     top: 0;
-    width: 100%;
+    right: 0;
     background-color: $color-black-lite;
     color: $color-white;
     @include mobile {
         font-size: 4dpt;
+        flex-wrap: wrap;
     }
+    flex-wrap: nowrap;
     border-bottom: 1px solid black;
 }
+
 
 .footer {
     margin-top: auto;

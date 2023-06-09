@@ -3,68 +3,63 @@
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" type="image/x-icon" href="https://icmccorm.me/assets/img/favicon.ico">
+  <link rel="shortcut icon" type="image/x-icon" href="http://localhost:4000/assets/img/favicon.ico">
   <link rel="stylesheet" href="/assets/css/styles.css">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-  <script src="https://icmccorm.me/assets/js/dropdown.js"></script>
+  <script src="http://localhost:4000/assets/js/dropdown.js"></script>
   <title>Ian C. McCormack</title>
 </head>
 
 <body>
   <div id="root">
     <div class="flex-main">
-      <div class="flex-profile">
-        <div class="profile">
-          <div class="profile-header">
-            <div class="profile-pic">
-              <img src="https://icmccorm.me/assets/img/headshot.png"></img>
-            </div>
-            <div class="profile-title">
-              <h1>Ian C. McCormack</h1>
-              <span>PhD Student @ Carnegie Mellon</span>
-            </div>
-            <button class="form-button" id="profile-contact-toggle">
+      <div class="flex-content">
+        <div class="nav">
+          <div class="profile-title">
+            <h1><a href="/">Ian McCormack</a></h1>
+          </div>
+          <div class="profile-contact-toggle-wrapper">
+            <button class="form-button form-button-inline" id="profile-contact-toggle">
               Contact
             </button>
           </div>
-          <div class="profile-contact-wrapper">
-            <div id="profile-contact" class="profile-contact">
-              <hr class="section-sep" />
-              <ul class="profile-contact-list">
-                <li class="item">
-                  <i class="ri-building-line"></i><span>Software and Societal Systems (S3D)</span>
-                </li>
-                <li class="item">
-                  <i class="ri-mail-line"></i><span>icmccorm@andrew.cmu.edu</span>
-                </li>
-              </ul>
-              <hr />
-              <div class="social">
-                <span class="social-tag">@icmccorm</span>
-                <div class="social-icons">
+          <div class="profile-contact-wrapper profile-contact-wrapper-inline">
+            <div id="profile-contact" class="profile-contact profile-contact-inline">
+              <div class="social social-inline">
+                <div class="nav-items-inline">
+                  
+                  <li>
+                    <a href="/"  class="nav-item nav-item-current" >
+                      About Me
+                    </a>
+                  </li>
+                  
+                  <li>
+                    <a href="/blog.html" 
+                      class="nav-item" >
+                      Blog
+                    </a>
+                  </li>
+                  
+                  <li>
+                    <a href="/pubs.html" 
+                      class="nav-item" >
+                      Publications
+                    </a>
+                  </li>
+                  
+                </div>
+                <div class="social-icons social-icons-inline">
                   <a href="https://twitter.com/icmccorm/">
                     <i class="ri-twitter-fill"></i></a>
                   <a href="https://github.com/icmccorm/">
                     <i class="ri-github-fill"></i>
                   </a>
-                  <a href="https://www.linkedin.com/in/icmccorm">
-                    <i class="ri-linkedin-box-fill"></i>
-                  </a>
-                </div>
-                <div class="social-icons">
-                  <a href="https://scholar.google.com/citations?user=KPLZe-sAAAAJ&hl=en&oi=sra">
-                    <i class="ai ai-google-scholar"></i>
-                  </a>
-                  <a href="https://orcid.org/0000-0001-6349-3402">
-                    <i class="ai ai-orcid"></i>
-                  </a>
-                </div>
-                <div class="social-icons">
-                  <a href="https://icmccorm.me/assets/pdfs/cv.pdf">
+                  <a href="http://localhost:4000/assets/pdfs/cv.pdf">
                     <i class="ai ai-cv"></i>
                   </a>
                 </div>
@@ -72,36 +67,19 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="flex-content">
-        <div class="nav">
-          
-            <a href="/"  class="nav-item nav-item-current" >
-              About Me
-            </a>
-          
-            <a href="/blog.html"  class="nav-item" >
-              Blog
-            </a>
-          
-            <a href="/pubs.html"  class="nav-item" >
-              Publications
-            </a>
-          
-        </div>
         <div class="flex-body">
           <div class="flex-rendered">
             <h1 id="research">Research</h1>
 <p>I’m a PhD student in Software Engineering at Carnegie Mellon University’s Software and Societal Systems Department (<a href="https://s3d.cmu.edu/">S3D</a>). I am advised by <a href="https://www.cs.cmu.edu/~aldrich/">Dr. Jonathan Aldrich</a> and <a href="https://www.cs.cmu.edu/~jssunshi/">Dr. Joshua Sunshine</a>.</p>
 
-<p>Broadly, I focus on the intersection of human-computer interaction and formal methods. Currently, I’m studying the unsafe features of the Rust programming language, which allow unrestricted access to memory and support for calling foreign functions. This is necessary for effective systems programming, but can break the invariants of Rust’s borrow checker, reintroducing the memory safety issues that Rust was designed to prevent. By learning from developers’ experiences, we can design and improve tools that assist with writing unsafe Rust, improving its usability and ensuring memory safety.</p>
+<p>I focus on the intersection of human-computer interaction and formal methods. Currently, I’m studying the <a href="https://doc.rust-lang.org/book/ch19-01-unsafe-rust.html">unsafe</a>features of the Rust programming language, which are necessary for systems programming but difficult to use correctly. I’m examining developers’ challenges when writing unsafe Rust and designing new tools to address them.</p>
 
-<p>Prior to my focus on unsafe Rust, I collaborated with <a href="https://www.cs.cmu.edu/~jlwise/">Jenna Wise</a> on the design and implementation of Gradual C0, a gradual verification tool for the <a href="http://reports-archive.adm.cs.cmu.edu/anon/2010/CMU-CS-10-145.pdf">C0</a> programming language. In 2022, we evaluated this approach against multiple, fully-dynamic baselines and observed a significant reduction in runtime overhead.</p>
+<p>Prior to my focus Rust, I collaborated with <a href="https://www.cs.cmu.edu/~jlwise/">Jenna Wise</a> on the design and implementation of Gradual C0, a gradual verification tool for the <a href="http://reports-archive.adm.cs.cmu.edu/anon/2010/CMU-CS-10-145.pdf">C0</a> programming language. In 2022, we evaluated this approach against multiple, fully-dynamic baselines and observed a significant reduction in runtime overhead.</p>
 
 <h1 id="education">Education</h1>
-<p>I attended the <a href="https://www.uwec.edu/">University of Wisconsin-Eau Claire</a> from 2017 to 2021, where I completed a double major in Computer Science and English, with an emphasis on rhetoric of science, technology, and culture. I was introduced to Computer Science research by <a href="https://www.jmu.edu/cise/cs/people/faculty-staff/johnson-chris.shtml">Chris Johnson</a>. At the time, Chris was developing <a href="https://twoville.org/#index">TwoVille</a>, a direct manipulation programming language for creating SVG animations. This project emphasized the importance of user-oriented design and introduced me to the fundamentals of programming language implementation.</p>
+<p>I attended the <a href="https://www.uwec.edu/">University of Wisconsin-Eau Claire</a> from 2017 to 2021, where I completed a double major in Computer Science and English, with an emphasis on rhetoric of science, technology, and culture. I was introduced to Computer Science research by <a href="https://www.jmu.edu/cise/cs/people/faculty-staff/johnson-chris.shtml">Chris Johnson</a>. We studied direct manipulation programming systems for creating animations, which emphasized the importance of user-oriented design and programming language fundamentals.</p>
 
-<p>In 2020, I was accepted into CMU’s <a href="https://www.cmu.edu/scs/s3d/reuse/Research/index.html">REUSE</a> program, where I joined a collaboration between CMU and Arizona State University. We created <a href="http://ccsg.ece.cmu.edu/ttpython/index.html">TTPython</a>, a macroprogramming systems for the Internet of Things. We used our prototype to reimplement a mock autonomous vehicle intersection and observed significantly reduced latency between devices, exemplifying how emphasizing the usability in programming language design can increase the objective performance of software applications. Our prototype implementation took 2nd place in a design competition at the 2021 CPS-IoT Week.</p>
+<p>In 2020, I was accepted into CMU’s <a href="https://www.cmu.edu/scs/s3d/reuse/Research/index.html">REUSE</a> program, where I joined a collaboration between CMU and Arizona State University. We created <a href="http://ccsg.ece.cmu.edu/ttpython/index.html">TTPython</a>, a macroprogramming systems for the Internet of Things. We used our prototype to reimplement a mock autonomous vehicle intersection and observed significantly reduced latency between devices, demonstrating how improving usability can lead to objective increases in performance.</p>
 
 <p>My current research on unsafe Rust is funded by the National Science Foundation’s Graduate Research Fellowship Program (GRFP). It continues in the sprit of each of my past projects, translating developers challenges into solutions that improve usability <em>and</em> demonstrably improve performance or quality metrics.</p>
 
@@ -119,5 +97,4 @@
     </div>
   </div>
 </body>
-
 </html>

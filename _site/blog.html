@@ -3,91 +3,69 @@
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" type="image/x-icon" href="https://icmccorm.me/assets/img/favicon.ico">
+  <link rel="shortcut icon" type="image/x-icon" href="http://localhost:4000/assets/img/favicon.ico">
   <link rel="stylesheet" href="/assets/css/styles.css">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-  <script src="https://icmccorm.me/assets/js/dropdown.js"></script>
+  <script src="http://localhost:4000/assets/js/dropdown.js"></script>
   <title>Ian C. McCormack</title>
 </head>
 
 <body>
   <div id="root">
     <div class="flex-main">
-      <div class="flex-profile">
-        <div class="profile">
-          <div class="profile-header">
-            <div class="profile-pic">
-              <img src="https://icmccorm.me/assets/img/headshot.png"></img>
-            </div>
-            <div class="profile-title">
-              <h1>Ian C. McCormack</h1>
-              <span>PhD Student @ Carnegie Mellon</span>
-            </div>
-            <button class="form-button" id="profile-contact-toggle">
+      <div class="flex-content">
+        <div class="nav">
+          <div class="profile-title">
+            <h1><a href="/">Ian McCormack</a></h1>
+          </div>
+          <div class="profile-contact-toggle-wrapper">
+            <button class="form-button form-button-inline" id="profile-contact-toggle">
               Contact
             </button>
           </div>
-          <div class="profile-contact-wrapper">
-            <div id="profile-contact" class="profile-contact">
-              <hr class="section-sep" />
-              <ul class="profile-contact-list">
-                <li class="item">
-                  <i class="ri-building-line"></i><span>Software and Societal Systems (S3D)</span>
-                </li>
-                <li class="item">
-                  <i class="ri-mail-line"></i><span>icmccorm@andrew.cmu.edu</span>
-                </li>
-              </ul>
-              <hr />
-              <div class="social">
-                <span class="social-tag">@icmccorm</span>
-                <div class="social-icons">
+          <div class="profile-contact-wrapper profile-contact-wrapper-inline">
+            <div id="profile-contact" class="profile-contact profile-contact-inline">
+              <div class="social social-inline">
+                <div class="nav-items-inline">
+                  
+                  <li>
+                    <a href="/" 
+                      class="nav-item" >
+                      About Me
+                    </a>
+                  </li>
+                  
+                  <li>
+                    <a href="/blog.html"  class="nav-item nav-item-current" >
+                      Blog
+                    </a>
+                  </li>
+                  
+                  <li>
+                    <a href="/pubs.html" 
+                      class="nav-item" >
+                      Publications
+                    </a>
+                  </li>
+                  
+                </div>
+                <div class="social-icons social-icons-inline">
                   <a href="https://twitter.com/icmccorm/">
                     <i class="ri-twitter-fill"></i></a>
                   <a href="https://github.com/icmccorm/">
                     <i class="ri-github-fill"></i>
                   </a>
-                  <a href="https://www.linkedin.com/in/icmccorm">
-                    <i class="ri-linkedin-box-fill"></i>
-                  </a>
-                </div>
-                <div class="social-icons">
-                  <a href="https://scholar.google.com/citations?user=KPLZe-sAAAAJ&hl=en&oi=sra">
-                    <i class="ai ai-google-scholar"></i>
-                  </a>
-                  <a href="https://orcid.org/0000-0001-6349-3402">
-                    <i class="ai ai-orcid"></i>
-                  </a>
-                </div>
-                <div class="social-icons">
-                  <a href="https://icmccorm.me/assets/pdfs/cv.pdf">
+                  <a href="http://localhost:4000/assets/pdfs/cv.pdf">
                     <i class="ai ai-cv"></i>
                   </a>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="flex-content">
-        <div class="nav">
-          
-            <a href="/"  class="nav-item" >
-              About Me
-            </a>
-          
-            <a href="/blog.html"  class="nav-item nav-item-current" >
-              Blog
-            </a>
-          
-            <a href="/pubs.html"  class="nav-item" >
-              Publications
-            </a>
-          
         </div>
         <div class="flex-body">
           <div class="flex-rendered">
@@ -107,5 +85,4 @@
     </div>
   </div>
 </body>
-
 </html>
