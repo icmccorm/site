@@ -1,32 +1,35 @@
 @import 'global';
 
+.profile-wrapper {
+    @include desktop {
+        align-self: flex-start;
+        position: sticky;
+    }
+}
 .profile {
     display: flex;
-    background-color: $color-gray;
-
-    * {
-        background-color: $color-gray;
-    }
-
+    flex-flow: column nowrap;
     width: 100%;
     height: 100%;
-    align-items: center;
-    flex-flow: column nowrap;
-
+    margin-top: 2em;
+    margin-bottom: 1em;
     @include desktop {
-        position: sticky;
         min-width: 340px;
         padding-left: 2rem;
-        padding-right: 2rem;
+
         padding-top: 5rem;
         text-align: center;
     }
 
     @include mobile {
-        border-bottom: 1px solid black;
-        width: 100%;
-        height: auto;
+        flex-flow: row nowrap;
+        justify-content: center;
+    }
+
+    @include mobile-small {
+        flex-flow: column nowrap;
         align-items: center;
+        flex-grow: 1;
     }
 }
 
@@ -34,20 +37,23 @@
     h1 {
         margin: 0;
     }
+
     display: flex;
     align-items: center;
+
     @include mobile {
         text-align: center;
         margin-left: 1em;
         margin-right: 0;
 
         padding: 1em;
+
         span {
             font-size: 10pt;
         }
 
         h1 {
-            font-size: 12pt;
+            font-size: 20pt;
             font-weight: 400;
         }
     }
@@ -55,6 +61,7 @@
     @include desktop {
         margin-left: 3em;
         margin-right: 3em;
+
         span {}
 
         h1 {
@@ -65,14 +72,13 @@
 
 .profile-header {
     display: flex;
-    width: 100%;
     align-items: center;
 
     @include mobile {
         flex-flow: ltr nowrap;
-        padding: 1em;
         justify-content: space-between;
         text-align: center;
+        flex-grow: 1;
     }
 
     @include desktop {
@@ -80,98 +86,37 @@
     }
 }
 
-.profile-contact {
-    text-align: center;
-    @include desktop {
-        height: auto !important;
-        flex-grow: 1;
-    }
-    @include mobile {
-        box-sizing: border-box !important;
-        flex-grow: 0;
-        width: auto;
-        max-width: 20em;
-        margin-bottom: 0em;
-        margin-top: 0em;
-        margin-left: auto;
-        margin-right: auto;
-        height: 0em;
-        @include transition(all 0.25s ease-in-out);
-        @include clearfix;
-        overflow: hidden;
-
-        * {
-            background-color: $color-black-lite;
-            color: $color-white;
-            border-color: $color-white;
-        }
-
-        background-color: $color-black-lite;
-
-    }
-
-}
-
-.profile-contact-inline {
-    @include mobile {
-        width: 100% !important;
-        max-width: none !important;
-        flex-grow: 1;
-    }
-    @include desktop {
- 
-    }
-}
-
-.profile-contact-wrapper {
+.profile-info {
     display: flex;
+    flex-flow: column nowrap;
     align-items: center;
-    @include mobile {
-        position: relative;
-        float: right;
-        width: 100%;
-        background-color: $color-black-lite;
-        color: white;
-    }
-    height: auto;
-    flex-shrink: 0;
-    flex-grow: 1;
-}
+    justify-content: center;
 
-.profile-contact-wrapper-inline {
     @include desktop {
-
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    @include mobile {
+        width: 60%;
+    }
+    @include mobile-small {
+        width: 100%;
+    }
+    hr {
+        width: 100%;
     }
 }
 
-.profile-contact-list {
+.profile-info-list {
     list-style: none;
     text-align: left;
+    margin: 0;
+    padding: 0;
 
     @include desktop {
-        display: inline;
-    }
-    @include mobile {
-        display: none;
-    }
-}
-
-
-.profile-contact-toggle-wrapper{
-    @include desktop {
-        display: none !important;
-    }
-    flex-grow: 1;
-}
-#profile-contact-toggle {
-    background-color: $color-white;
-    @include mobile {
-        float: right;
-        font-size: 1em;
+        display: block;
     }
 
-    padding: 0.5rem;
-    margin: 0.5rem;
 }
 
 hr {
@@ -194,16 +139,16 @@ hr {
     }
 
     @include mobile {
-        width: 6rem;
     }
 
     img {
         width: 75%;
         height: auto;
-        max-height: 240px;
-        max-width: 240px;
-        border-radius: 100%;
-        border: 2px solid $color-black;
+        max-height: 300px;
+        max-width: 300px;
+
+        border-color: 1px solid rgba(0, 0, 0, 0.23);
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     }
 }
 
@@ -235,6 +180,7 @@ hr {
 
         text-align: right;
     }
+
     @include mobile {
         float: none !important;
         display: block;
@@ -256,8 +202,9 @@ hr {
 }
 
 .social-tag {
-    display: inline-block;
-    margin-bottom: 0.5rem;
+    display: inline-flex;
+    align-items: center;
+
 }
 
 .social-icons-inline {
@@ -265,6 +212,7 @@ hr {
     flex-direction: row;
     justify-content: center;
     color: $color-white !important;
+
     @include desktop {
         margin-right: 1em;
     }
@@ -282,4 +230,11 @@ hr {
     padding: 0;
     margin-top: auto;
     margin-bottom: auto;
+}
+
+
+.social-sep {
+    border-color: $color-gray;
+    margin-left: 1em;
+    margin-right: 1em;
 }

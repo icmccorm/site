@@ -1,15 +1,13 @@
 window.addEventListener('load', () => {
-  document.getElementById("profile-contact-toggle").addEventListener("click", () => {
-    var x = document.getElementById("profile-contact");
-    if (x.style.height === "0em" || x.style.height === "" || x.style.height === "auto") {
-      x.style.height = "12em";
-      x.style.marginTop = "1em";
-      x.style.marginBottom = "1em";
+  const profileContactToggle = document.getElementById("contact-toggle");
+  const profileContact = document.getElementById("contact");
 
-    } else {
-      x.style.height = "0em";
-      x.style.marginTop = "0em";
-      x.style.marginBottom = "0em";
-    }
-})
-})
+  profileContactToggle.addEventListener("click", () => {
+    const isClosed = profileContact.style.height === "0em" || !profileContact.style.height;
+
+    profileContact.style.height = isClosed ? "12em" : "0em";
+    profileContact.style.marginTop = isClosed ? "1em" : "0em";
+    profileContact.style.marginBottom = isClosed ? "1em" : "0em";
+  });
+});
+

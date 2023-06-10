@@ -17,62 +17,94 @@
 <body>
   <div id="root">
     <div class="flex-main">
-      <div class="flex-content">
-        <div class="nav">
-          <div class="profile-title">
-            <h1><a href="/">Ian McCormack</a></h1>
-          </div>
-          <div class="profile-contact-toggle-wrapper">
-            <button class="form-button form-button-inline" id="profile-contact-toggle">
-              Contact
-            </button>
-          </div>
-          <div class="profile-contact-wrapper profile-contact-wrapper-inline">
-            <div id="profile-contact" class="profile-contact profile-contact-inline">
-              <div class="social social-inline">
-                <div class="nav-items-inline">
-                  
-                  <li>
-                    <a href="/"  class="nav-item nav-item-current" >
-                      About Me
-                    </a>
-                  </li>
-                  
-                  <li>
-                    <a href="/blog.html" 
-                      class="nav-item" >
-                      Blog
-                    </a>
-                  </li>
-                  
-                  <li>
-                    <a href="/pubs.html" 
-                      class="nav-item" >
-                      Publications
-                    </a>
-                  </li>
-                  
-                </div>
-                <div class="social-icons social-icons-inline">
-                  <a href="https://twitter.com/icmccorm/">
-                    <i class="ri-twitter-fill"></i></a>
-                  <a href="https://github.com/icmccorm/">
-                    <i class="ri-github-fill"></i>
+      <div class="nav">
+        <div class="profile-title">
+          <h1><a href="/">Ian McCormack</a></h1>
+        </div>
+        <div class="contact-toggle-wrapper">
+          <a class="form-button form-button-inline" id="contact-toggle">
+            <i class="ri-menu-line"></i>
+          </a>
+        </div>
+        <div class="contact-wrapper contact-wrapper-inline">
+          <div id="contact" class="contact contact-inline">
+            <div class="social social-inline">
+              <div class="nav-items-inline">
+                
+                <li>
+                  <a href="/"  class="nav-item nav-item-current" >
+                    About Me
                   </a>
-                  <a href="http://localhost:4000/assets/pdfs/cv.pdf">
-                    <i class="ai ai-cv"></i>
+                </li>
+                
+                <li>
+                  <a href="/pubs.html" 
+                    class="nav-item" >
+                    Publications
                   </a>
-                </div>
+                </li>
+                
+                <li>
+                  <a href="http://localhost:4000/assets/pdfs/cv.pdf" class="nav-item">
+                    CV
+                  </a>
+                </li>
+              </div>
+              <div class="social-icons social-icons-inline">
+                <span class="social-tag">@icmccorm</span>
+                <hr class="social-sep" />
+                <a href="https://twitter.com/icmccorm/">
+                  <i class="ri-twitter-fill"></i></a>
+                <a href="https://github.com/icmccorm/">
+                  <i class="ri-github-fill"></i>
+                </a>
+                <a href="https://www.reddit.com/user/UnsafeRust">
+                  <i class="ri-reddit-fill"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/icmccorm/">
+                  <i class="ri-linkedin-fill"></i>
+                </a>
               </div>
             </div>
           </div>
         </div>
-        <div class="flex-body">
+      </div>
+      <div class="flex-body">
+        <div class="flex-content">
+          <div class="flex-profile">
+            <div class="profile-wrapper">
+              <div class="profile">
+                <div class="profile-header">
+                  <div class="profile-pic">
+                    <img src="http://localhost:4000/assets/img/headshot.png"></img>
+                  </div>
+                </div>
+                <div class="profile-info">
+                  <hr />
+                  <ul class="profile-info-list">
+                    <li class="item">
+                      <i class="ri-government-line"></i><span>Carnegie Mellon University</span>
+                    </li>
+                    <li class="item">
+                      <i class="ri-building-line"></i><span>Software and Societal Systems</span>
+                    </li>
+                    <li class="item">
+                      <i class="ri-door-closed-line"></i><span>TCS Hall 224</span>
+                    </li>
+                    <li class="item">
+                      <i class="ri-mail-line"></i><span>icmccorm@cs.cmu.edu</span>
+                    </li>
+                  </ul>
+                  <hr />
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="flex-rendered">
             <h1 id="research">Research</h1>
 <p>I’m a PhD student in Software Engineering at Carnegie Mellon University’s Software and Societal Systems Department (<a href="https://s3d.cmu.edu/">S3D</a>). I am advised by <a href="https://www.cs.cmu.edu/~aldrich/">Dr. Jonathan Aldrich</a> and <a href="https://www.cs.cmu.edu/~jssunshi/">Dr. Joshua Sunshine</a>.</p>
 
-<p>I focus on the intersection of human-computer interaction and formal methods. Currently, I’m studying the <a href="https://doc.rust-lang.org/book/ch19-01-unsafe-rust.html">unsafe</a>features of the Rust programming language, which are necessary for systems programming but difficult to use correctly. I’m examining developers’ challenges when writing unsafe Rust and designing new tools to address them.</p>
+<p>I focus on the intersection of human-computer interaction and formal methods. Currently, I’m studying the <a href="https://doc.rust-lang.org/book/ch19-01-unsafe-rust.html">unsafe</a> features of the Rust programming language, which are necessary for systems programming but difficult to use correctly. I’m examining developers’ challenges when writing unsafe Rust and designing new tools to address them.</p>
 
 <p>Prior to my focus Rust, I collaborated with <a href="https://www.cs.cmu.edu/~jlwise/">Jenna Wise</a> on the design and implementation of Gradual C0, a gradual verification tool for the <a href="http://reports-archive.adm.cs.cmu.edu/anon/2010/CMU-CS-10-145.pdf">C0</a> programming language. In 2022, we evaluated this approach against multiple, fully-dynamic baselines and observed a significant reduction in runtime overhead.</p>
 
@@ -84,17 +116,18 @@
 <p>My current research on unsafe Rust is funded by the National Science Foundation’s Graduate Research Fellowship Program (GRFP). It continues in the sprit of each of my past projects, translating developers challenges into solutions that improve usability <em>and</em> demonstrably improve performance or quality metrics.</p>
 
           </div>
-          <div class="footer">
-            <span>&copy;
-              <script>document.write(new Date().getFullYear())</script>, Ian C. McCormack.
-            </span>
-            <span class="footer-attrib">Powered by <a class="footer-link" href="https://jekyllrb.com">Jekyll</a>, <a
-                href="https://jpswalsh.github.io/academicons/" class="footer-link">Academicons</a>, &amp; <a
-                href="https://remixicon.com/" class="footer-link">Remix Icon</a></span>
-          </div>
+        </div>
+        <div class="footer">
+          <span>&copy;
+            <script>document.write(new Date().getFullYear())</script>, Ian C. McCormack.
+          </span>
+          <span class="footer-attrib">Powered by <a class="footer-link" href="https://jekyllrb.com">Jekyll</a>, <a
+              href="https://jpswalsh.github.io/academicons/" class="footer-link">Academicons</a>, &amp; <a
+              href="https://remixicon.com/" class="footer-link">Remix Icon</a></span>
         </div>
       </div>
     </div>
   </div>
 </body>
+
 </html>

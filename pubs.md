@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: empty
 post: ./_includes/publication.html
 ---
 
