@@ -173,6 +173,9 @@ hr {
     text-align: center;
     hr {
         margin: 0;
+        @include desktop {
+            display: none;
+        }
     }
 }
 
@@ -239,6 +242,7 @@ hr {
 .sep {
     height: 100%;
     border-color: $color-gray;
+    color: $color-gray;
     margin-left: 1em;
     margin-right: 1em;
 }

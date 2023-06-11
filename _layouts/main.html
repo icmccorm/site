@@ -23,7 +23,7 @@
             <hr class="sep" />
             {% for item in site.data.navigation %}
             {% if page.url==item.link %}
-            <i><h2>{{ item.name }}</h2></i>
+            <h2>{{ item.name }}</h2>
             {% endif %}
             {% endfor %}
           </div>
@@ -46,22 +46,22 @@
                 </li>
                 {% endfor %}
                 <li>
-                  <a href="{{ base.url | prepend: site.url }}/assets/pdfs/cv.pdf" class="nav-item">
+                  <a href="{{ base.url | prepend: site.url }}/assets/pdfs/cv.pdf" class="nav-item" target=”_blank”>
                     CV
                   </a>
                 </li>
               </div>
               <hr />
               <div class="social-icons social-icons-inline">
-                <a href="https://twitter.com/{{site.social_tag}}/">
+                <a href="https://twitter.com/{{site.social_tag}}/" target="_blank">
                   <i class="ri-twitter-fill"></i></a>
-                <a href="https://github.com/{{site.social_tag}}/">
+                <a href="https://github.com/{{site.social_tag}}/" target="_blank">
                   <i class="ri-github-fill"></i>
                 </a>
-                <a href="https://www.reddit.com/user/UnsafeRust">
+                <a href="https://www.reddit.com/user/UnsafeRust" target="_blank">
                   <i class="ri-reddit-fill"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/icmccorm/">
+                <a href="https://www.linkedin.com/in/icmccorm/" target="_blank">
                   <i class="ri-linkedin-fill"></i>
                 </a>
               </div>

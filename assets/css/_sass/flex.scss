@@ -197,21 +197,28 @@
 
 
 .footer {
+    display: flex;
     margin-top: auto;
     padding: 1em;
     width: 100%;
     background-color: $color-black-lite;
     color: $color-white;
     @include mobile {
+
         font-size: 0.5dpt;
+        flex-flow: column nowrap;
+        justify-content: left;
     }
+    
 }
 .footer-attrib {
     float: right;
     @include mobile{
         float: left;
     }
-    margin-left: auto;
+    @include desktop {
+        margin-left: auto;
+    }
     right: 0;
 }
 
