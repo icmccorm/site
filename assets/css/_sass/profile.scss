@@ -171,6 +171,9 @@ hr {
 
 .social {
     text-align: center;
+    hr {
+        margin: 0;
+    }
 }
 
 .social-inline {
@@ -233,8 +236,19 @@ hr {
 }
 
 
-.social-sep {
+.sep {
+    height: 100%;
     border-color: $color-gray;
     margin-left: 1em;
     margin-right: 1em;
+}
+
+.section-info {
+    @include desktop {
+        display: none
+    }
+    display: flex;
+    flex-flow: row ltr;
+    align-items: center;
+    height: 100%;
 }

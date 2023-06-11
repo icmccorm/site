@@ -42,6 +42,18 @@ $desktop-width: 1024px;
     }
 }
 
+.hidden-desktop {
+    @include desktop {
+        display: none;
+    }
+}
+
+.hidden-mobile {
+    @include mobile {
+        display: none;
+    }
+}
+
 $color-green: #4CB944;
 $color-gray: #d6d6d8;
 $color-black: #12130F;

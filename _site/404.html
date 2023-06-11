@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" type="image/x-icon" href="http://localhost:4000/assets/img/favicon.ico">
@@ -16,10 +15,18 @@
 
 <body>
   <div id="root">
-    <div class="flex-main">
-      <div class="nav">
+    <div class="flex-main" id="main">
+      <div class="nav" id="nav">
         <div class="profile-title">
           <h1><a href="/">Ian McCormack</a></h1>
+          <div class="section-info">
+            <hr class="sep" />
+            
+            
+            
+            
+            
+          </div>
         </div>
         <div class="contact-toggle-wrapper">
           <a class="form-button form-button-inline" id="contact-toggle">
@@ -51,9 +58,8 @@
                   </a>
                 </li>
               </div>
+              <hr />
               <div class="social-icons social-icons-inline">
-                <span class="social-tag">@icmccorm</span>
-                <hr class="social-sep" />
                 <a href="https://twitter.com/icmccorm/">
                   <i class="ri-twitter-fill"></i></a>
                 <a href="https://github.com/icmccorm/">
@@ -72,37 +78,8 @@
       </div>
       <div class="flex-body">
         <div class="flex-content">
-          <div class="flex-profile">
-            <div class="profile-wrapper">
-              <div class="profile">
-                <div class="profile-header">
-                  <div class="profile-pic">
-                    <img src="http://localhost:4000/assets/img/headshot.png"></img>
-                  </div>
-                </div>
-                <div class="profile-info">
-                  <hr />
-                  <ul class="profile-info-list">
-                    <li class="item">
-                      <i class="ri-government-line"></i><span>Carnegie Mellon University</span>
-                    </li>
-                    <li class="item">
-                      <i class="ri-building-line"></i><span>Software and Societal Systems</span>
-                    </li>
-                    <li class="item">
-                      <i class="ri-door-closed-line"></i><span>TCS Hall 224</span>
-                    </li>
-                    <li class="item">
-                      <i class="ri-mail-line"></i><span>icmccorm@cs.cmu.edu</span>
-                    </li>
-                  </ul>
-                  <hr />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="flex-rendered">
-            <style type="text/css" media="screen">
+            <div class="flex-rendered">
+  <style type="text/css" media="screen">
   .container {
     margin: 10px auto;
     max-width: 600px;
@@ -123,7 +100,7 @@
   <p>The requested page could not be found.</p>
 </div>
 
-          </div>
+</div>
         </div>
         <div class="footer">
           <span>&copy;
@@ -137,5 +114,4 @@
     </div>
   </div>
 </body>
-
 </html>

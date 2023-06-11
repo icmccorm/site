@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" type="image/x-icon" href="{{ base.url | prepend: site.url }}/assets/img/favicon.ico">
@@ -16,10 +15,18 @@
 
 <body>
   <div id="root">
-    <div class="flex-main">
-      <div class="nav">
+    <div class="flex-main" id="main">
+      <div class="nav" id="nav">
         <div class="profile-title">
           <h1><a href="/">Ian McCormack</a></h1>
+          <div class="section-info">
+            <hr class="sep" />
+            {% for item in site.data.navigation %}
+            {% if page.url==item.link %}
+            <i><h2>{{ item.name }}</h2></i>
+            {% endif %}
+            {% endfor %}
+          </div>
         </div>
         <div class="contact-toggle-wrapper">
           <a class="form-button form-button-inline" id="contact-toggle">
@@ -44,9 +51,8 @@
                   </a>
                 </li>
               </div>
+              <hr />
               <div class="social-icons social-icons-inline">
-                <span class="social-tag">@{{site.social_tag}}</span>
-                <hr class="social-sep" />
                 <a href="https://twitter.com/{{site.social_tag}}/">
                   <i class="ri-twitter-fill"></i></a>
                 <a href="https://github.com/{{site.social_tag}}/">
@@ -65,9 +71,7 @@
       </div>
       <div class="flex-body">
         <div class="flex-content">
-          <div class="flex-rendered">
-            {{content}}
-          </div>
+            {{ content }}
         </div>
         <div class="footer">
           <span>&copy;
@@ -81,5 +85,4 @@
     </div>
   </div>
 </body>
-
 </html>

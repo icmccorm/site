@@ -56,11 +56,15 @@
 }
 
 .contact-toggle-wrapper{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: right;
     @include desktop {
         display: none !important;
     }
     flex-grow: 1;
 }
+
 #contact-toggle {
     background-color: $color-black-lite;
     color: $color-white;
