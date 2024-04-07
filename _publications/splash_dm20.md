@@ -5,7 +5,5 @@ type: Lightning Talk
 category: talk
 conf: SPLASH-E
 in: SPLASH-E
-year: 2020
-month: November
-dates: 15—20
+date: 2020-11-15
 ---

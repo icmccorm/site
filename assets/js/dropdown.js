@@ -15,7 +15,7 @@ window.onload = () => {
   main.onscroll = () => {
     if (main.scrollTop > 10) {
       nav.classList.add("nav-scrolled")
-    }else {
+    } else {
       nav.classList.remove("nav-scrolled")
     }
   }

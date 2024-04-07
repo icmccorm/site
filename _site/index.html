@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
   <script src="http://localhost:4000/assets/js/dropdown.js"></script>
-  <title>Ian C. McCormack</title>
+  <title>Ian McCormack</title>
 </head>
 
 <body>
@@ -61,16 +61,11 @@
               </div>
               <hr />
               <div class="social-icons social-icons-inline">
-                <a href="https://twitter.com/icmccorm/" target="_blank">
-                  <i class="ri-twitter-fill"></i></a>
                 <a href="https://github.com/icmccorm/" target="_blank">
                   <i class="ri-github-fill"></i>
                 </a>
                 <a href="https://www.reddit.com/user/UnsafeRust" target="_blank">
                   <i class="ri-reddit-fill"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/icmccorm/" target="_blank">
-                  <i class="ri-linkedin-fill"></i>
                 </a>
               </div>
             </div>
@@ -110,28 +105,135 @@
 </div>
 <div class="flex-rendered">
   <h1 id="research">Research</h1>
-<p>I’m a PhD student in Software Engineering at Carnegie Mellon University’s Software and Societal Systems Department (<a href="https://s3d.cmu.edu/">S3D</a>). I am advised by <a href="https://www.cs.cmu.edu/~aldrich/">Dr. Jonathan Aldrich</a> and <a href="https://www.cs.cmu.edu/~jssunshi/">Dr. Joshua Sunshine</a>.</p>
+<p>I study the Rust programming language, which provides guarantees of memory and thread safety without run-time overhead. These properties are crucial for security, as memory safety bugs have lead to the majority of vulnerabilities in <a href="https://source.android.com/docs/security/test/memory-safety">Android</a> and <a href="https://www.chromium.org/Home/chromium-security/memory-safety/">Chromium</a>. Rust’s <em>borrow checker</em> provides these guarantees by restricting the programs that developers can write. When these restrictions become burdensome, developers can enable a set of <a href="https://doc.rust-lang.org/book/ch19-01-unsafe-rust.html">unsafe</a> features that bypass the borrow checker. These features are difficult to use correctly, and can introduce security vulnerabilities through undefined behavior.</p>
 
-<p>I focus on the intersection of human-computer interaction and formal methods. Currently, I’m studying the <a href="https://doc.rust-lang.org/book/ch19-01-unsafe-rust.html">unsafe</a> features of the Rust programming language, which are necessary for systems programming but difficult to use correctly. I’m examining developers’ challenges when writing unsafe Rust and designing new tools to address them.</p>
+<p>My goal is to make it easier for developers to use unsafe correctly. To make this possible, I am currently researching methods for <em>gradually verifying</em> that Rust programs are free of undefined behavior. <a href="https://www.cs.cmu.edu/~aldrich/papers/vmcai2018-gradual-verification.pdf">Gradual verification</a> enables developers to write partial, incomplete specifications for their programs, with the remaining properties checked at run-time. A gradual version of Miri’s <a href="https://www.ralfj.de/blog/2023/06/02/tree-borrows.html">Tree Borrows</a> model will enable Rust developers to lift their test cases <em>step-by-step</em> into complete, static specifications that their programs are free of undefined behavior.</p>
 
-<p>Prior to my focus Rust, I collaborated with <a href="https://www.cs.cmu.edu/~jlwise/">Jenna Wise</a> on the design and implementation of Gradual C0, a gradual verification tool for the <a href="http://reports-archive.adm.cs.cmu.edu/anon/2010/CMU-CS-10-145.pdf">C0</a> programming language. In 2022, we evaluated this approach against multiple, fully-dynamic baselines and observed a significant reduction in runtime overhead.</p>
+<h2 id="recent-publications">Recent Publications</h2>
+
+<div class="pub">
+<div class="pub-tags">
+    <span class="conf-tag">Preprint</span>
+</div> 
+<div class="pub-content">
+<div class="pub-text">
+    <h3 class="pub-title">"Against the Void": An Interview and Survey Study on How Rust Developers Use Unsafe Code</h3>
+    <span class="pub-authors">Ian McCormack, Tomas Dougan, Sam Estep, Hanan Hibshi, Jonathan Aldrich, Joshua Sunshine</span>
+    <p class="pub-conference"> 
+        
+    </p>
+</div>
+<div class="pub-links">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href=" https://arxiv.org/abs/2404.02230" class="pub-link-box">
+<i class="pub-link ai ai-arxiv ai-4x"></i>
+<p>arXiv</p>
+</a>
+
+
+
+
+<a href=" https://arxiv.org/pdfs/2404.02230.pdf" class="pub-link-box">
+<i class="pub-link ri-article-line"></i>
+<p>PDF</p>
+</a>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+</div>
+
+<div class="pub">
+<div class="pub-tags">
+    <span class="conf-tag">Preprint</span>
+</div> 
+<div class="pub-content">
+<div class="pub-text">
+    <h3 class="pub-title">Gradual C0: Symbolic Execution for Efficient Gradual Verification</h3>
+    <span class="pub-authors">Jenna DiVincenzo, Ian McCormack, Hemant Gouni, Jacob Gorenburg, Mona Zhang, Conrad Zimmerman, Joshua Sunshine, Éric Tanter, Jonathan Aldrich</span>
+    <p class="pub-conference"> 
+        
+    </p>
+</div>
+<div class="pub-links">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href=" https://arxiv.org/abs/2210.02428" class="pub-link-box">
+<i class="pub-link ai ai-arxiv ai-4x"></i>
+<p>arXiv</p>
+</a>
+
+
+
+
+<a href=" https://arxiv.org/pdfs/2210.02428.pdf" class="pub-link-box">
+<i class="pub-link ri-article-line"></i>
+<p>PDF</p>
+</a>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+</div>
 
 <h1 id="education">Education</h1>
-<p>I attended the <a href="https://www.uwec.edu/">University of Wisconsin-Eau Claire</a> from 2017 to 2021, where I completed a double major in Computer Science and English, with an emphasis on rhetoric of science, technology, and culture. I was introduced to Computer Science research by <a href="https://www.jmu.edu/cise/cs/people/faculty-staff/johnson-chris.shtml">Chris Johnson</a>. We studied direct manipulation programming systems for creating animations, which emphasized the importance of user-oriented design and programming language fundamentals.</p>
+<p>I attended the <a href="https://www.uwec.edu/">University of Wisconsin-Eau Claire</a> from 2017 to 2021. I completed a double major in Computer Science and English with a minor in Mathematics. I was introduced to Computer Science research by <a href="https://www.jmu.edu/cise/cs/people/faculty-staff/johnson-chris.shtml">Chris Johnson</a>, and I helped contribute to the design of <a href="https://twodee.org/twoville/plateau-2024/">Twoville</a>: a direct manipulation programming system for computer science education.</p>
 
-<p>In 2020, I was accepted into CMU’s <a href="https://www.cmu.edu/scs/s3d/reuse/Research/index.html">REUSE</a> program, where I joined a collaboration between CMU and Arizona State University. We created <a href="http://ccsg.ece.cmu.edu/ttpython/index.html">TTPython</a>, a macroprogramming systems for the Internet of Things. We used our prototype to reimplement a mock autonomous vehicle intersection and observed significantly reduced latency between devices, demonstrating how improving usability can lead to objective increases in performance.</p>
+<p>In 2020, I was accepted into CMU’s <a href="https://www.cmu.edu/scs/s3d/reuse/Research/index.html">REUSE</a> program, where I joined a collaboration between CMU and Arizona State University. We created <a href="http://ccsg.ece.cmu.edu/ttpython/index.html">TTPython</a>, a macroprogramming systems for the Internet of Things. We used our prototype to implement a mock <a href="https://news.asu.edu/20210716-connected-autonomous-vehicles-make-intersections-safer">autonomous vehicle intersection</a> and observed significantly reduced latency compared to a prior approach.</p>
 
-<p>My current research on unsafe Rust is funded by the National Science Foundation’s Graduate Research Fellowship Program (GRFP). It continues in the sprit of each of my past projects, translating developers challenges into solutions that improve usability <em>and</em> demonstrably improve performance or quality metrics.</p>
+<p>I began my PhD in Software Engineering at CMU in September, 2021. My current research on Rust is funded by the National Science Foundation’s <a href="https://www.nsfgrfp.org/">Graduate Research Fellowship Program (GRFP)</a>. I’m advised by <a href="https://www.cs.cmu.edu/~aldrich/">Jonathan Aldrich</a> and <a href="https://www.cs.cmu.edu/~jssunshi/">Joshua Sunshine</a> in <a href="https://s3d.cmu.edu/">S3D</a>.</p>
 
 </div>
         </div>
         <div class="footer">
           <span>&copy;
-            <script>document.write(new Date().getFullYear())</script>, Ian C. McCormack.
+            <script>document.write(new Date().getFullYear())</script>, Ian McCormack.
           </span>
-          <span class="footer-attrib">Powered by <a class="footer-link" href="https://jekyllrb.com">Jekyll</a>, <a
-              href="https://jpswalsh.github.io/academicons/" class="footer-link">Academicons</a>, &amp; <a
-              href="https://remixicon.com/" class="footer-link">Remix Icon</a></span>
         </div>
       </div>
     </div>

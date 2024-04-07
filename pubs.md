@@ -1,11 +1,10 @@
 ---
 layout: default
-post: ./_includes/publication.html
 ---
 
 ## Preprints
-{% assign preprint_pubs = site.publications | where: "category", "preprint" %}
-{% for pre_pub in preprint_pubs%}
+{% assign preprint_pubs = site.publications | where: "category", "preprint" | sort: 'date' | reverse %}
+{% for pre_pub in preprint_pubs %}
 {% include publication.html pub=pre_pub %}
 {% endfor %}
 

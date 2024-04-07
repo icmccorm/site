@@ -5,7 +5,5 @@ type: Demonstration
 category: artifact
 conf: FabLearn
 in: "FabLearn: Making as Resistance and Resilience"
-year: 2020
-month: October
-dates: 10-11
+date: 2020-10-10
 ---

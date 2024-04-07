@@ -5,8 +5,6 @@ type: Extended abstract
 category: competition
 conf: SPLASH
 in: "Proc. of the SIGPLAN International Conference on Systems, Programming, Languages, and Applications: Software for Humanity (SPLASH)"
-year: 2020
-month: November
-dates: 15—20
+date: 2020-11-15
 pages: 28—30
 ---
