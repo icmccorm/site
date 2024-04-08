@@ -22,9 +22,7 @@
 }
 
 .pub-content {
-    * {
-        font-size: 10pt;
-    }
+
 }
 
 .pub-links {
@@ -33,13 +31,14 @@
 }
 
 .pub-text {
-    font-size: 10pt !important;
     display: block;
     align-self: flex-start;
 }
 
 .pub-title {
-    font-weight: 400 !important;
+    font-family: 'Inter' !important;
+    font-size: 14pt !important;
+    font-weight: 600 !important;
 }
 
 .pub-link-box {

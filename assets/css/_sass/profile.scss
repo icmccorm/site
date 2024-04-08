@@ -12,7 +12,7 @@
     flex-flow: column nowrap;
     width: 100%;
     height: 100%;
-    margin-top: 2em;
+    margin-top: 0em;
     margin-bottom: 1em;
 
     @include desktop {
@@ -38,6 +38,7 @@
 .profile-title {
     h1 {
         margin: 0;
+        
     }
 
     display: flex;
