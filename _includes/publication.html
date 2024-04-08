@@ -23,7 +23,7 @@
             {% assign slides_filename = filename | prepend: "/assets/slides/" | remove: ".md" | append: "_slides.pdf" %}
             {% assign slides_file = site.static_files | where: "path", slides_filename | first %}
 
-            {% assign poster_filename = filename | prepend: "/assets/poster/" | remove: ".md" | append: "_poster.pdf"
+        {% assign poster_filename = filename | prepend: "/assets/poster/" | remove: ".md" | append: "_poster.pdf"
             %}
             {% assign poster_file = site.static_files | where: "path", poster_filename | first %}
 
@@ -44,8 +44,6 @@
                 <p>PDF</p>
             </a>
             {% endif %}
-
-
 
             {% if slides_file %}
             <a href="{{slides_filename}}" class="pub-link-box">
