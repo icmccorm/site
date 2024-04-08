@@ -17,13 +17,13 @@
         <div class="pub-links">
             {% assign filename = include.pub.path | remove: "_publications/" | remove: ".md" %}
 
-            {% assign article_filename = filename | prepend: "/assets/pdfs/" | remove: ".md" | append: ".pdf" %}
+            {% assign article_filename = filename | prepend: "/assets/pdf/" | remove: ".md" | append: ".pdf" %}
             {% assign article_file = site.static_files | where: "path", article_filename | first %}
 
             {% assign slides_filename = filename | prepend: "/assets/slides/" | remove: ".md" | append: "_slides.pdf" %}
             {% assign slides_file = site.static_files | where: "path", slides_filename | first %}
 
-            {% assign poster_filename = filename | prepend: "/assets/posters/" | remove: ".md" | append: "_poster.pdf"
+            {% assign poster_filename = filename | prepend: "/assets/poster/" | remove: ".md" | append: "_poster.pdf"
             %}
             {% assign poster_file = site.static_files | where: "path", poster_filename | first %}
 
