@@ -9,7 +9,7 @@
             <p class="pub-conference">
                 {% if include.pub.category != "preprint" %}
                 {% if include.pub.type %} {{include.pub.type}}.{% endif %}
-                <em> In {{include.pub.in}}</em>, {{include.pub.year}}{%if include.pub.pages %}, {{include.pub.pages}}{%
+                <em>{{include.pub.in}}</em> {%if include.pub.pages %}, {{include.pub.pages}}{%
                 endif %}.
                 {% endif %}
             </p>

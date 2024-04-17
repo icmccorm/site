@@ -1,6 +1,6 @@
 ---
 title: Direct Manipulation for Computational Making
-authors: Ian C. McCormack, Chris Johnson
+authors: Ian McCormack, Chris Johnson
 type: Lightning Talk
 category: talk
 conf: SPLASH-E

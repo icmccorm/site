@@ -2,10 +2,17 @@
 layout: default
 ---
 
+
 ## Preprints
 {% assign preprint_pubs = site.publications | where: "category", "preprint" | sort: 'date' | reverse %}
 {% for pre_pub in preprint_pubs %}
 {% include publication.html pub=pre_pub %}
+{% endfor %}
+
+## Peer-Reviewed Publications
+{% assign pr_pubs = site.publications | where: "category", "peer_reviewed" | sort: 'date' | reverse %}
+{% for pub in pr_pubs %}
+{% include publication.html pub=pub %}
 {% endfor %}
 
 ## Research Competitions

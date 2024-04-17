@@ -1,6 +1,6 @@
 ---
 title: One Program to Rule the Intersection
-authors: Reese Grimsley, Edward Andert, Ian C. McCormack, Eve Hu, Bob Iannucci
+authors: Reese Grimsley, Edward Andert, Ian McCormack, Eve Hu, Bob Iannucci
 type: Prototype
 category: competition
 conf: CPS-IoT Week
