@@ -106,7 +106,7 @@
 </div>
 <div class="flex-rendered">
   <h1 id="research">Research</h1>
-<p>I study the Rust programming language, which provides guarantees of memory and thread safety without run-time overhead. These properties are crucial for security, as memory safety bugs have lead to the majority of vulnerabilities in <a href="https://source.android.com/docs/security/test/memory-safety">Android</a> and <a href="https://www.chromium.org/Home/chromium-security/memory-safety/">Chromium</a>. Rust’s <em>borrow checker</em> provides these guarantees by restricting the programs that developers can write. When these restrictions become burdensome, developers can enable a set of <a href="https://doc.rust-lang.org/book/ch19-01-unsafe-rust.html">unsafe</a> features that bypass the borrow checker. These features are difficult to use correctly, and can introduce security vulnerabilities through undefined behavior.</p>
+<p>I study the Rust programming language, which can guarantee memory and thread safety without run-time overhead. Rust’s <em>borrow checker</em> provides these guarantees by restricting the programs that developers can write. When these restrictions become burdensome, developers can enable a set of <a href="https://doc.rust-lang.org/book/ch19-01-unsafe-rust.html">unsafe</a> features that bypass the borrow checker. However, these features are difficult to use correctly, as they can lead to security vulnerabilities.</p>
 
 <p>My goal is to make it easier for developers to use unsafe correctly. To make this possible, I am currently researching methods for <em>gradually verifying</em> that Rust programs are free of undefined behavior. <a href="https://www.cs.cmu.edu/~aldrich/papers/vmcai2018-gradual-verification.pdf">Gradual verification</a> enables developers to write partial, incomplete specifications for their programs, with the remaining properties checked at run-time. A gradual version of Miri’s <a href="https://www.ralfj.de/blog/2023/06/02/tree-borrows.html">Tree Borrows</a> model will enable Rust developers to lift their test cases <em>step-by-step</em> into complete, static specifications that their programs are free of undefined behavior.</p>
 
@@ -143,8 +143,6 @@
                 <i class="pub-link ri-article-line"></i>
                 <p>PDF</p>
             </a>
-            
-
             
 
             
@@ -196,8 +194,6 @@
                 <i class="pub-link ri-article-line"></i>
                 <p>PDF</p>
             </a>
-            
-
             
 
             

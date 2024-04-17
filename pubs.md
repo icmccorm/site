@@ -2,7 +2,6 @@
 layout: default
 ---
 
-
 ## Preprints
 {% assign preprint_pubs = site.publications | where: "category", "preprint" | sort: 'date' | reverse %}
 {% for pre_pub in preprint_pubs %}
@@ -19,12 +18,6 @@ layout: default
 {% assign conference_pubs = site.publications | where: "category", "competition" %}
 {% for conf_pub in conference_pubs%}
 {% include publication.html pub=conf_pub %}
-{% endfor %}
-
-## Artifacts & Demonstrations
-{% assign artifact_pubs = site.publications | where: "category", "artifact" %}
-{% for art_pub in artifact_pubs%}
-{% include publication.html pub=art_pub %}
 {% endfor %}
 
 ## Talks

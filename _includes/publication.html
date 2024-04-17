@@ -10,7 +10,7 @@
                 {% if include.pub.category != "preprint" %}
                 {% if include.pub.type %} {{include.pub.type}}.{% endif %}
                 <em>{{include.pub.in}}</em> {%if include.pub.pages %}, {{include.pub.pages}}{%
-                endif %}.
+                endif %}, {% capture year %}{{include.pub.date | date: "%Y"}}{% endcapture %}{{year}}.
                 {% endif %}
             </p>
         </div>
@@ -42,13 +42,6 @@
             <a href="{{article_filename}}" class="pub-link-box">
                 <i class="pub-link ri-article-line"></i>
                 <p>PDF</p>
-            </a>
-            {% endif %}
-
-            {% if slides_file %}
-            <a href="{{slides_filename}}" class="pub-link-box">
-                <i class="pub-link ri-slideshow-line"></i>
-                <p>Slides</p>
             </a>
             {% endif %}
 
