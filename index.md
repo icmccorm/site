@@ -2,16 +2,15 @@
 layout: about
 ---
 # Research
-I study the Rust programming language, which can guarantee memory and thread safety without run-time overhead. Rust's *borrow checker* provides these guarantees by restricting the programs that developers can write. When these restrictions become burdensome, developers can enable a set of [unsafe](https://doc.rust-lang.org/book/ch19-01-unsafe-rust.html) features that bypass the borrow checker. However, these features are difficult to use correctly, as they can lead to security vulnerabilities.
+The Rust programming language is incredibly popular because it is fast and can statically eliminate memory safety errors. However, most critical systems code is still written in C and C++. To interoperate with these applications, Rust developers need to use a set of [unsafe](https://doc.rust-lang.org/book/ch19-01-unsafe-rust.html) features that bypass Rust's safety restrictions. If these features are used incorrectly, they can cause unique types of bugs by breaking rules of Rust's aliasing model. [Miri], a Rust interpreter, is the only tool that can detect these bugs, but it is slow and does not support most foreign function calls.
 
-My goal is to make it easier for developers to use unsafe correctly. To make this possible, I am currently researching methods for *gradually verifying* that Rust programs are free of undefined behavior. [Gradual verification](https://www.cs.cmu.edu/~aldrich/papers/vmcai2018-gradual-verification.pdf) enables developers to write partial, incomplete specifications for their programs, with the remaining properties checked at run-time. A gradual version of Miri's [Tree Borrows](https://www.ralfj.de/blog/2023/06/02/tree-borrows.html) model will enable Rust developers to lift their test cases *step-by-step* into complete, static specifications that their programs are free of undefined behavior.
+I am researching and designing methods for finding aliasing bugs in multi-language Rust applications. My goal is to leverage symbolic analysis to reduce the overhead of dynamic instrumentation and provide guarantees of soundness.
 
 ## Recent Publications
 {% assign preprint_pubs = site.publications | where: "category", "preprint" | sort: 'date' | reverse %}
 {% for pre_pub in preprint_pubs limit:2 %}
 {% include publication.html pub=pre_pub %}
 {% endfor %}
-
 
 # Education
 I attended the [University of Wisconsin-Eau Claire](https://www.uwec.edu/) from 2017 to 2021. I completed a double major in Computer Science and English with a minor in Mathematics. I was introduced to Computer Science research by [Chris Johnson](https://www.jmu.edu/cise/cs/people/faculty-staff/johnson-chris.shtml), and I helped contribute to the design of [Twoville](https://twodee.org/twoville/plateau-2024/): a direct manipulation programming system for computer science education.

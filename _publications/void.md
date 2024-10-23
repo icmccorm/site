@@ -1,9 +1,9 @@
 ---
-title: "\"Against the Void\": An Interview and Survey Study on How Rust Developers Use Unsafe Code"
+title: "A Mixed-Methods Study on the Implications of Unsafe Rust for Interoperation, Encapsulation, and Tooling"
 authors: Ian McCormack, Tomas Dougan, Sam Estep, Hanan Hibshi, Jonathan Aldrich, Joshua Sunshine
 category: preprint
 conf: Preprint
 in: "Arxiv"
-date: 2024-04-05
+date: 2024-10-22
 arxiv: "2404.02230"
 ---
