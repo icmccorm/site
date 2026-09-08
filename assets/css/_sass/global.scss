@@ -206,6 +206,12 @@ h2 {
 }
 
 
+a {
+    color: inherit;
+    text-decoration: underline dotted;
+    text-underline-offset: 2px;
+}
+
 h1 a {
     color: inherit;
     text-decoration: inherit;
