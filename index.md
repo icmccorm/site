@@ -5,7 +5,7 @@ layout: about
 The Rust programming language is incredibly popular because it is fast and can statically eliminate memory safety errors. However, most critical systems code is still written in C and C++. To interoperate with these applications, Rust developers need to use a set of [unsafe](https://doc.rust-lang.org/book/ch19-01-unsafe-rust.html) features that bypass Rust's safety restrictions. If these features are used incorrectly, they can cause unique types of bugs by breaking rules of Rust's aliasing model. [Miri](https://github.com/rust-lang/miri), a Rust interpreter, is the only tool that can detect these bugs, but it is slow and does not support most foreign function calls. I am researching and designing new tools for finding these aliasing bugs in multi-language Rust applications.
 
 ## Recent Publications
-{% assign preprint_pubs = site.publications | where: "category", "preprint" | sort: 'date' | reverse %}
+{% assign preprint_pubs = site.publications | where: "category", "peer_reviewed" | sort: 'date' | reverse %}
 {% for pre_pub in preprint_pubs limit:2 %}
 {% include publication.html pub=pre_pub %}
 {% endfor %}

@@ -84,13 +84,6 @@
     }
 }
 
-.flex-rendered-post {
-    @include desktop {
-        max-width: 800px;
-    }
-
-}
-
 .flex-body ul {
     list-style-position: outside;
 }

@@ -157,14 +157,17 @@ hr {
 }
 
 .item {
+    display: flex;
+    align-items: center;
     padding-bottom: 0.25rem;
     padding-top: 0.25rem;
     font-size: 11pt;
 
     i {
-        float: left;
+        flex-shrink: 0;
         padding: 0 1rem;
         font-size: 14pt;
+        line-height: 1;
     }
 
     span {
